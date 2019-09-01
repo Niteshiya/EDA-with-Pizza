@@ -44,7 +44,7 @@ ggplot() +
 #lets plot lattitude and longitude on usa map for better visualization
 map <- getMap(resolution = "low")
 plot(map,xlim=c(-170,-55),ylim=c(20,70),asp=1)
-points(pizza$longitude,pizza$latitude,col=pizza$menus.name,cex=0.2,size=pizza$menus.amountMax)
+points(pizza$longitude,pizza$latitude,col=pizza$menus.name)
 #Here we see the diffrent clusters of Pizza places
 #Now lets see the relation better some of the varriables
 spam <- pizza[,c("priceRangeMax","priceRangeMin", "latitude","longitude", "postalCode")]
